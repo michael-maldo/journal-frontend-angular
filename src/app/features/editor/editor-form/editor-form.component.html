@@ -1,0 +1,8 @@
+<p>editor-form works!</p>
+<!-- pages/editor.component.html -->
+<form (ngSubmit)="save()">
+  <input [(ngModel)]="entry.title" name="title" placeholder="Title" required>
+  <textarea [(ngModel)]="entry.content" name="content" placeholder="Markdown content..." rows="10"></textarea>
+  <input [(ngModel)]="entry.tags" name="tags" placeholder="Tags comma-separated">
+  <button type="submit">Save</button>
+</form>
