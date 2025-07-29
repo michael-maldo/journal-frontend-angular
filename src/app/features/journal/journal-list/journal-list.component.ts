@@ -1,7 +1,8 @@
-import {Component, NgIterable} from '@angular/core';
+import {Component} from '@angular/core';
 import {DatePipe, NgForOf} from '@angular/common';
 import {MarkdownComponent} from 'ngx-markdown';
 import {JournalEntry} from '../../../core/models/journal-entry.model';
+import {JOURNAL_ENTRIES} from '../../../core/mock/journal-data';
 
 @Component({
   selector: 'app-journal-list',
@@ -14,20 +15,5 @@ import {JournalEntry} from '../../../core/models/journal-entry.model';
   styleUrl: './journal-list.component.scss'
 })
 export class JournalListComponent {
-  // entries: (NgIterable<unknown> & NgIterable<any>) | undefined | null;
-
-  entries: JournalEntry[] = [
-    {
-      title: 'Getting started with Angular 19',
-      content: '# Angular 19\n\nLearning standalone APIs.',
-      tags: ['angular', 'standalone'],
-      createdAt: new Date()
-    },
-    {
-      title: 'Deployed first app',
-      content: '## Milestone\n\nDeployed to VPS at `journal.michael-maldo.biz`.',
-      tags: ['deployment', 'vps'],
-      createdAt: new Date()
-    }
-  ];
+  entries: JournalEntry[] = JOURNAL_ENTRIES;
 }

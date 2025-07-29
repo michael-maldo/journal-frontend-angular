@@ -1,10 +1,8 @@
-<p>journal-list works!</p>
-<!-- pages/journal-list.component.html -->
 <div class="entry" *ngFor="let entry of entries">
   <h2>{{ entry.title }}</h2>
   <p><small>{{ entry.createdAt | date }}</small></p>
   <markdown [data]="entry.content"></markdown>
   <div class="tags">
-    <span *ngFor="let tag of entry.tags" class="tag">{{ tag }}</span>
+    <span *ngFor="let tag of entry.tags" class="tag">{{ tag }} </span>
   </div>
 </div>
