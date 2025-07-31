@@ -1,7 +1,7 @@
 import {ApplicationConfig, importProvidersFrom, provideZoneChangeDetection} from '@angular/core';
-import { provideRouter } from '@angular/router';
+import {provideRouter} from '@angular/router';
 
-import { routes } from './app.routes';
+import {routes} from './app.routes';
 import {MarkdownModule} from 'ngx-markdown';
 
 export const appConfig: ApplicationConfig = {

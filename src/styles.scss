@@ -2,3 +2,13 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+blockquote {
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #2196f3; // Material blue
+  background-color: #f0f8ff;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.7);
+}
+

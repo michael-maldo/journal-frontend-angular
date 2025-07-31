@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {DatePipe, NgForOf} from '@angular/common';
-import {MarkdownComponent} from 'ngx-markdown';
+import {MarkdownModule} from 'ngx-markdown';
 import {JournalEntry} from '../../../core/models/journal-entry.model';
 import {JOURNAL_ENTRIES} from '../../../core/mock/journal-data';
 
@@ -9,7 +9,7 @@ import {JOURNAL_ENTRIES} from '../../../core/mock/journal-data';
   imports: [
     NgForOf,
     DatePipe,
-    MarkdownComponent
+    MarkdownModule
   ],
   templateUrl: './journal-list.component.html',
   styleUrl: './journal-list.component.scss'
